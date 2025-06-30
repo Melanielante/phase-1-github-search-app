@@ -13,9 +13,15 @@
     <h2>GitHub Search</h2>
 
     <form id='github-form'>
-      <input id='search' type='text' name='search'>
-      <input type='submit' name='submit'/>
+       <label for="search-type">Search for:</label>
+       <select id="search-type">
+          <option value="user">Users</option>
+          <option value="repo">Repositories</option>
+       </select>
+       <input id='search' type='text' name='search'>
+       <input type='submit' name='submit'/>
     </form>
+
 
     <div id='github-container'>
       <ul id='user-list'>
@@ -28,6 +34,8 @@
     </div>
 
   </div>
+
+  
 
 </body>
 </html>
